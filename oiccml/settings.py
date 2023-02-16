@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',  # form 을 꾸며주기 위한 bootstrap4 라이브러리
     'accountapp',
+    'profileapp',
 ]
 
 MIDDLEWARE = [

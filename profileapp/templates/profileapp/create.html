@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+<div style="text-align: center; max-width: 500px; margin: 4rem auto;">
+    <div class="mb-4">
+        <h4>Profile Create</h4>
+    </div>
+    <!--  이미지 같은 파일을 form 에서 사용할 때 enctype 속성을 꼭 명시 해줘야 이미지 파일을 받을 수 있다  -->
+    <form action="{% url 'profileapp:create' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- {{ form }} 을 아래와 같이 변경 (bootstrap4 적용) -->
+        {% bootstrap_form form %}
+        <input type="submit" class="btn btn-dark rounded-pill col-6 mt-3">
+    </form>
+</div>
+
+{% endblock %}
