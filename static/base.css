@@ -2,13 +2,22 @@
     text-align: center;
     margin: 2rem 0;
 }
+.main_header_list {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+.main_header_logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
 .main_footer {
     text-align: center;
     margin-top: 2rem;
 }
 .main_footer_button {
-    font-size: .6rem;
+    font-size: 0.9rem;
 }
-.main_logo {
+.main_footer_logo {
     font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
 }
