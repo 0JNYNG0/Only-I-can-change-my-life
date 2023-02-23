@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'bootstrap4',  # form 을 꾸며주기 위한 bootstrap4 라이브러리
     'accountapp',
     'profileapp',
+    'articleapp',
 ]
 
 MIDDLEWARE = [

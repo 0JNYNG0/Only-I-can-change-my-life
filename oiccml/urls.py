@@ -21,6 +21,8 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accountapp.urls')),
-    path('profiles/', include('profileapp.urls'))
+    path('profiles/', include('profileapp.urls')),
+    path('articles/', include('articleapp.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # MEDIA_URL, MEDIA_ROOT 연결 작업을 통해 서버가 이미지 등을 올바르게 뱉어낼 수 있게 된다
